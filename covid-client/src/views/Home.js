@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import { Appbar, Title, Button, List } from 'react-native-paper'
+import {BottomNavigationCustom} from '../components/BottomNavigation/BottomNavigation'
 
 
 export default function Home({ navigation }) {
@@ -57,7 +58,8 @@ export default function Home({ navigation }) {
             </View>
             { /* Gestes barriéres */ }
 
-            { /* Bottom Navigation */ }            
+            { /* Bottom Navigation */ } 
+            {/*<BottomNavigationCustom />*/}           
         </View>
     )
 }
