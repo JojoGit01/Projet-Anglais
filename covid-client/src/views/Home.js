@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 import { Appbar, Title, Button, List } from 'react-native-paper'
-import {BottomNavigationCustom} from '../components/BottomNavigation/BottomNavigation'
+//import {BottomNavigationCustom} from '../components/BottomNavigation/BottomNavigation'
 
 
 export default function Home({ navigation }) {

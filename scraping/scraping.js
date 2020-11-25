@@ -57,7 +57,6 @@ function getStatCovid() {
       row.forEach( (r) => {
         let d = []
         d.push(r)
-        console.log(d)
         n++
         if (n === 3) {
           newData.push(d)
@@ -70,6 +69,35 @@ function getStatCovid() {
     })
 }
 
-getStatCovid()
+
+const getMapData = () => {
+  nightmare
+    .goto('https://www.bing.com/covid/local/france?form=C19ANS')
+    .evaluate( () => {
+      const div_cot_root = document.querySelector("div.content")
+      console.log(div_cot_root)
+      let dataMap = []
+
+      areaDiv = div_cot_root.querySelectorAll('div.areaDiv').forEach( elm => data_confirm.push(elm.textContent))
+      
+      dataMap.forEach( data => console.log(JSON.stringify(data)))
+
+      return {
+        data: dataMap
+      }
+    })
+    .then( ({data}) => {
+      data.forEach( (elm) => {
+        elm.forEach(e => console.log(e))
+        console.log("\n\n")
+      })
+      console.log("Reussi")
+    })
+} 
+
+
+//getMapData()
+
+//getStatCovid()
 //getDataFrance()
 

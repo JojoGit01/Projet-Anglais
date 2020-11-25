@@ -13,6 +13,7 @@ export default function DashboardContent() {
                 <Title style={{textAlign: "center", backgroundColor: "#000", color: "#fff", width: "100%", height: 60, paddingTop: 20, fontSize: 35}}>Graphique</Title>
                 <View>
                     <Title>Nombre de nouveau cas par jour</Title>
+                    {/*<BarChartCustom />*/}
                 </View>
                 <View>
                     <Title style={{textAlign:"center", textDecorationLine: "underline", fontSize: 25}}>Nombre de cas cumulés</Title>

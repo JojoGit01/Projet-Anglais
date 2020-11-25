@@ -1,14 +1,23 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react'
+import { View } from 'react-native';
+import { Appbar } from 'react-native-paper'
+import Map from '../components/Map/Map'
+import MapInformation from '../components/Map/MapInformation';
 
 // npm install react-native-maps --save-exact
 
 
-function MapCovid() {
+function MapCovid({navigation}) {
+    const [dataInformationCard, setDataInformationCard] = useState({title: "Test"})
+
     return (
-        <Text>
-            Map Covid
-        </Text>
+        <View>
+            <Appbar.Header style={{backgroundColor: "#fff"}} >
+                <Appbar.Action size={35} icon="menu" onPress={() => navigation.openDrawer()} />
+            </Appbar.Header>
+            <Map />
+            <MapInformation data={[dataInformationCard]} />
+        </View>
     )
 }
 
