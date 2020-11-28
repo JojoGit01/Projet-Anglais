@@ -9,14 +9,18 @@ import MapCovid from '../views/MapCovid'
 
 const Drawer = createDrawerNavigator()
 
-export default function Router() {
-    return (
-        <NavigationContainer>
-            <Drawer.Navigator drawerContent={navigation => <DrawerContent {...navigation}/>}>
+const RouterNav = () => (
+    <NavigationContainer>
+        <Drawer.Navigator drawerContent={navigation => <DrawerContent {...navigation}/>}>
                 <Drawer.Screen name="Home" component={Home} />
                 <Drawer.Screen name="Dashboard" component={Dashboard} />
                 <Drawer.Screen name="MapCovid" component={MapCovid} />
-            </Drawer.Navigator>
-      </NavigationContainer>
+        </Drawer.Navigator>
+    </NavigationContainer>
+)
+
+export default function Router() {
+    return (
+        <RouterNav />
     )
 }

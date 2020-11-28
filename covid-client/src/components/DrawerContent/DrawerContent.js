@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import { View, Image } from 'react-native'
-import { Drawer, Text, TouchableRipple, Switch } from 'react-native-paper'
+import { Drawer, Text, TouchableRipple, Switch, DarkTheme } from 'react-native-paper'
 import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { DrawerContentData } from './DrawerContentData'
 
 import { DrawerContentStyle as styles } from "../../styles/DrawerContentStyle"
+import { useTheme } from '../../themes/themeContainer'
+
 
 function DrawerContent( { navigation } ) {
 
     const [isDarkTheme, setIsDarkTheme] = useState(false)
+
+    const theme = useTheme()
 
     const toggleTheme = () => {
         setIsDarkTheme(!isDarkTheme)
@@ -42,14 +46,15 @@ function DrawerContent( { navigation } ) {
 
     const DrawerSectionPreference = () => (
         <Drawer.Section style={styles.preferences} title="Preferences">
-            <TouchableRipple onPress={() => {toggleTheme()}}>
                 <View style={styles.preference}>
                     <Text>Dark Theme</Text>
-                    <View pointerEvents="none">
-                        <Switch value={isDarkTheme}/>                                        
+                    <View>
+                        <Switch
+                            value={theme.mode === 'dark'}
+                            onValueChange={value => theme.setMode(value ? 'dark' : 'light')}
+                        />                                      
                     </View>
                 </View>
-            </TouchableRipple>
         </Drawer.Section>
     )
 

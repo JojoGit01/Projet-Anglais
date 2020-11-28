@@ -25,7 +25,6 @@ app.use('/informationCardUnder', informationUnderCardRouter)
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
 const connection = mongoose.connection
 
-
 connection.once('open', () => {
     console.log("MongoDb data send good !")
 })

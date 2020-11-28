@@ -4,7 +4,7 @@ const axios = require('axios');
 
 const getInformationUnderCard = () => {
     Apify.main(async () => {
-        const requestQueue = await Apify.openRequestQueue();
+         const requestQueue = await Apify.openRequestQueue();
         await requestQueue.addRequest({ url: 'https://www.bing.com/covid?form=C19ANS' });
         const crawler = new Apify.PuppeteerCrawler({
             requestQueue,

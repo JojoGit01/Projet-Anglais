@@ -14,3 +14,6 @@ npm run buld
 npm exact run start if start:  
     not start close door:  
     start door open or 
+
+
+# Récupérer 
