@@ -1,0 +1,13 @@
+.card {
+    margin-top: 73px!important;
+    margin-right: auto!important;
+    margin-left: auto!important;
+}
+
+.login-card {
+    min-height: 60vh;
+}
+
+.registerMessage {
+    margin-top: 10vh;
+}

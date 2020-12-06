@@ -1,0 +1,96 @@
+.componentPieChart {
+    max-width: 30%;
+    margin: auto;
+    background: #FFF;
+    border: 0;
+    border-radius: 6px;
+}
+
+.dashboardContainer____chart__title.componentPieChart__title {
+    margin-bottom: -70px;
+}
+
+.componentPieChart__legend__title {
+    text-align: left;
+    text-indent: 5%;
+}
+
+.legend__show {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 2.5em;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.legend__show__div {
+    display: block;
+    width: 20%;
+}
+
+.legend__show__div:first-child {
+    align-self: center;
+}
+   
+
+
+.legend__show__div__r {
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-right: 5px
+}
+
+.dashboardContainer____chart__title {
+    font-size: 45px;
+    background: rgb(46, 44, 44);
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    font-family: cursive;
+}
+
+.dashboardContainer__chartLinedAY {
+    width: 60%;
+    background: #fff;
+    padding: 5px;
+    height: 100%;
+}
+
+.dashboardContainer__LineChart {
+    width: 60%;
+    margin: 50px auto;
+}
+
+
+.barchartDataCountry {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 25px;
+    background: #FFF;
+    border:0;
+    border-radius: 6px;
+}
+
+.barcharDataCounty_c {
+    margin: auto;
+    padding: 20px
+}
+
+.recharts-surface,
+.recharts-wrapper.barcharDataCounty_c {
+    width: 100%!important;
+    margin-bottom: -10px;
+}
+
+.recharts-legend-wrapper {
+    width: 100%!important;
+    margin-top: 10px!important
+}
+
+.recharts-wrapper {
+    width: 100%!important;
+}

@@ -1,0 +1,43 @@
+.sidebar__content a,
+.sidebar__acount__list_option a {
+    text-decoration: none;
+    color: #000
+}
+
+
+
+.MuiListItemText-root {
+    color: #000;
+}
+
+svg.MuiSvgIcon-root {
+    font-size: 3rem!important;
+}
+
+.MuiToolbar-regular {
+    min-height: 73px!important;
+}
+
+.MuiTypography-root.MuiListItemText-primary:first-child {
+    margin-left: 20px;
+}
+
+.MuiAvatar-root.MuiAvatar-circle.MuiAvatar-colorDefault {
+    margin-left: 2.5px
+}
+
+.sidebar__img__under{
+    z-index: -1;
+    opacity: 0.9;
+    background-image: url('../images/Dimonika05.jpg');
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-top: -20px;
+
+}
+
+.MuiPaper-root.MuiDrawer-paper {
+    background: url('../images/katalinks01.jpg');
+    opacity: 1;
+}

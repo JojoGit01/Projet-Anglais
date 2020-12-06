@@ -1,0 +1,107 @@
+.dashboardHeader__content svg {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0,.14), 0 7px 10px -5px rgba(255, 152, 0,.4);
+}
+
+.dashboardHeader__content .dashboardHeader__content__orange {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.dashboardHeader__content .dashboardHeader__content__green {
+    background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+
+.dashboardHeader__content .dashboardHeader__content__red {
+    background: linear-gradient(60deg, #ef5350, #e53935);
+}
+
+.dashboardHeader__content__black {
+    background: linear-gradient(60deg, rgb(34, 31, 31), rgb(34, 31, 31));
+}
+
+.dashboardHeader {
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.dashboardHeader__content {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+    margin: 0px 10px;
+    background: #FFF;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+    border: 0;
+    border-radius: 6px;
+}
+
+.dashboardHeader__content_view {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto
+}
+
+.dashboardHeader__content__img {
+    margin-top: -20px
+}
+
+.dashboardHeader__content__text {
+    font-size: 22px;
+}
+
+.dashboardHeader__content__text__name {
+    color: #999999;
+    padding-top: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.dashboardHeader__content__text_dataSend {
+    color: #3C4858;
+    margin-top: 1px;
+    min-height: auto;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    font-weight: 700;
+    margin-bottom: 3px;
+    font-size: 25px;
+}
+
+.dashboardHeader__content__time {
+    width: 85%;
+    margin: auto
+}
+
+.dashboardHeader__content__udpateTime {
+    color: #999;
+    text-align: left;
+    text-indent: 5px;
+}
+
+.dashboardContainer {
+    width: 100%;
+    margin: auto;
+}
+
+.dashboardContainer__title {
+    background: url('../images/Dimonika05.jpg');
+    font-size: 55px;
+    color: #fff;
+    height: 120px;
+    text-decoration: underline;
+    padding-top: 15px;
+}
+
+.dashboardContainer__content {
+    display: flex;
+    width: 80%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}

@@ -1,0 +1,30 @@
+.map {
+    margin-top: 73px;
+}
+
+.map__title {
+    background: url('../images/Dimonika05.jpg');
+    font-size: 80px;
+    padding-top: 20px;
+    text-decoration: underline;
+    color: #fff;
+    height: 170px;
+}
+
+.map__container {
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+    border: 10px solid #000;
+}
+
+.map__container__title {
+    text-align: center;
+    font-size: 30px;
+}
+
+.map__container__paragraph {
+    display: block;
+    text-indent: 5px;
+    font-size: 20px;
+}
